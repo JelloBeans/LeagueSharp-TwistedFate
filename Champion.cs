@@ -1168,9 +1168,9 @@ namespace TwistedFate
                     if (
                         ShouldSelect.Any(
                             s =>
-                                s == CardColor.Blue && spell.Name == "bluecardlock" ||
-                                s == CardColor.Gold && spell.Name == "goldcardlock" ||
-                                s == CardColor.Red && spell.Name == "redcardlock"))
+                                s == CardColor.Blue && spell.Name == "BlueCardLock" ||
+                                s == CardColor.Gold && spell.Name == "GoldCardLock" ||
+                                s == CardColor.Red && spell.Name == "RedCardLock"))
                     {
                         Utility.DelayAction.Add(
                             (int)
@@ -1198,17 +1198,17 @@ namespace TwistedFate
                     {
                         Status = SelectStatus.Selecting;
                     }
-                    if (args.SData.Name == "goldcardlock")
+                    if (args.SData.Name == "GoldCardLock")
                     {
                         LastCard = CardColor.Gold;
                         Status = SelectStatus.Selected;
                     }
-                    else if (args.SData.Name == "bluecardlock")
+                    else if (args.SData.Name == "BlueCardLock")
                     {
                         LastCard = CardColor.Blue;
                         Status = SelectStatus.Selected;
                     }
-                    else if (args.SData.Name == "redcardlock")
+                    else if (args.SData.Name == "RedCardLock")
                     {
                         LastCard = CardColor.Red;
                         Status = SelectStatus.Selected;
